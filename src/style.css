@@ -138,15 +138,21 @@ svg {
 }
 
 .project-card{
-    width: 300px;
+    width: 350px;
     height: 500px;
-    box-shadow: 5px 5px 20px rgb(59, 58, 58);
     margin: 10px;
+    overflow:auto;
+    /* background: hidden; */
+    
 }
 
 .project-container{
     display: flex;
     justify-content: space-around;
+
+}
+p.subtext{
+    margin: 0 10px;
 }
 
 @media only screen and (max-width: 1000px){
@@ -157,9 +163,12 @@ svg {
 }
 
 .project-image{
-    margin-top: 25px;
+    margin-top: 15px;
     width: 250px;
     border-radius: 25px;
+    box-shadow: 5px 5px 10px rgb(59, 58, 58);
+    
+
 }
 
 hr{
