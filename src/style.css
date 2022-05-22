@@ -143,8 +143,12 @@ svg {
     width: 350px;
     height: 500px;
     margin: 10px;
-    overflow:auto;
-    /* background: hidden; */
+    overflow:hidden;
+    background: #f6f5f1d5;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+    box-shadow:  5px 5px 10px
+
     
 }
 
@@ -155,6 +159,7 @@ svg {
 }
 p.subtext{
     margin: 0 10px;
+    /* color: white; */
 }
 
 @media only screen and (max-width: 1000px){
