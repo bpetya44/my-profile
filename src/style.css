@@ -46,8 +46,8 @@ li{
 }
 
 h1{
-    font-size: 90px;
-    margin: 0;
+    font-size: 70px;
+    margin: 10px;
 }
 
 h2{
@@ -73,7 +73,7 @@ p{
     align-items: center;
 }
 .hero-text{
-    margin-left: 80px;
+    margin-left: 40px;
     margin-bottom: 200px;
 }
 
@@ -118,13 +118,15 @@ svg {
     display: flex;
     justify-content: space-around;
     padding: 80px;
+    margin-left: 40px;
 }
 
 .subsection-alternative{
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 50px 80px;
+    padding: 40px 40px;
+    margin-left: 40px;
 }
 
 .headshot{
@@ -225,6 +227,7 @@ a{
 
     .logo{
         display: none;
+    
     }
 }
 
