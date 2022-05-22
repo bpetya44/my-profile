@@ -265,3 +265,7 @@ button[type=submit]:focus {
 button[type=submit]:hover {
 	background: #e54e1c;
 }
+
+.socials-footer {
+    padding-bottom: 50px;
+}
