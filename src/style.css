@@ -124,8 +124,11 @@ svg {
 .subsection-alternative{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
     text-align: center;
-    padding: 40px 40px;
+    padding: 40px 0;
     margin-left: 40px;
 }
 
@@ -137,6 +140,8 @@ svg {
 .headshot-container{
     display: flex;
     align-items: center;
+    padding-right: 20px;
+    /* margin-right: 10px; */
 }
 
 .project-card{
@@ -350,4 +355,6 @@ button[type=submit]:hover {
 
 .socials-footer {
     padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
 }
