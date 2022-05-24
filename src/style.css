@@ -104,6 +104,24 @@ svg {
 .socials{
     padding-bottom: 200px;
 }
+@media only screen and (max-width:1000px) {
+    .hero-area{
+        flex-direction: column;
+        height: fit-content;
+    }
+    .hero{
+        max-height: fit-content;
+        font-size: 30px;
+    }
+    .hero-text{
+        margin-bottom: 100px;
+    }
+    .socials{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+    }
+}
 
 .social{
     margin: 15px;
