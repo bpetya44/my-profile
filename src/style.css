@@ -129,7 +129,7 @@ svg {
 
     text-align: center;
     padding: 40px 0;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .headshot{
@@ -163,8 +163,8 @@ svg {
     justify-items: normal; */
     width: 90%;
   height: auto;
-  margin: 10px;
-  background-color: lightgrey;
+  /* margin-left: 40px; */
+  /* background-color: lightgrey; */
 }
 p.subtext{
     margin: 0 10px;
@@ -232,10 +232,10 @@ p.subtext{
   /* ----------------------- */
 
 @media only screen and (max-width: 1000px){
-    .project-container{
+    /* .project-container{
         display: flex;
         flex-wrap: wrap;
-    }
+    } */
 }
 
 .project-image{

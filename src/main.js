@@ -6,5 +6,4 @@ function toggleButton(){
 }
 
 hamburgerButton.addEventListener('click', toggleButton)
-gsap.to('.logo', {duration: 2, x: 300})
 
