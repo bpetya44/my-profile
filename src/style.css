@@ -2,6 +2,7 @@ body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
+    font-size: 10px;
 }
 
 section{
@@ -16,7 +17,7 @@ section{
     /* background: url("https://my.spline.design/roomrelaxingcopy-fbbef02d499c01366e052534481a9af7/"); */
     height: 100vh;
     color: white;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 
@@ -26,7 +27,10 @@ footer{
     color: white;
     background-color: black;
     text-align: center;
-    padding: 80px;
+    padding: 3rem;
+}
+footer h2{
+    font-size: 4em;
 }
 
 nav{
@@ -37,9 +41,9 @@ nav{
 ul{
     display: flex;
     list-style-type: none;
-    width: 500px;
+    width: 70%;
     justify-content: space-around;
-    font-size: 30px;
+    font-size: 5vh;
 }
 
 li{
@@ -48,23 +52,26 @@ li{
 }
 
 h1{
-    font-size: 60px;
-    margin: 10px;
+    font-size: 3.2rem;
+    margin: 1rem;
 }
 
 h2{
-    margin-top: 20px;
-    font-size: 40px;
+    margin-top: 0.8em;
+    font-size: 3rem;
 }
 
 p{
-    margin: 0;
-    font-size: 30px;
+    margin: 1rem;
+    font-size: 1.5em;
     font-weight: 300;
 }
+ .information p{
+    font-size: 2em;
+ }
 
 .subtext{
-   font-size: 20px; 
+   font-size: 2em; 
    font-weight: 300;
 }
 
@@ -78,15 +85,15 @@ p{
 
 .iframe{
     display: flex;
-    width: 600px;
-    height: 600px;
-    padding-left:70px;
-    padding-bottom: 100px;
+    width: 100vw;
+    height: 100vh;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
 }
 
 .hero-text{
-    margin-left: -200px;
-    margin-bottom: 200px;
+    margin-left: -30rem;
+    margin-bottom: 15rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -94,7 +101,7 @@ p{
         display: none;
     }
     .hero-text{
-        margin-left: 40px;
+        margin-left: 2rem;
     }
 
 }
@@ -123,12 +130,13 @@ svg {
  }
 
 .socials{
-    padding-bottom: 200px;
+    padding-bottom: 20rem;
 }
+
 @media only screen and (max-width:600px) {
     .hero-area{
         flex-direction: column;
-        height: 80%;
+        height: 70%;
     }
     .hero{
         max-height: 100vh;
@@ -140,7 +148,7 @@ svg {
     .socials{
         display: flex;
         flex-direction: row;
-        padding: 0;
+        padding-bottom: 5rem;
     }
 }
 
@@ -156,8 +164,9 @@ svg {
 .subsection{
     display: flex;
     justify-content: space-around;
-    padding: 80px;
-    margin-left: 40px;
+    /* padding: 80px; */
+    margin-left: 2rem;
+    margin-top: 2rem;
 }
 
 .subsection-alternative{
@@ -167,23 +176,23 @@ svg {
     justify-content: center;
 
     text-align: center;
-    padding: 40px 0;
+    /* padding: 40px 0; */
     /* margin-left: 40px; */
 }
 
 .inofmation{
-    margin-left: 20px;
+    /* margin-left: 2rem; */
 }
 
 .headshot{
-    height: 250px;
-    border-radius: 160px;
+    height: 30vh;
+    border-radius: 50%;
 }
 
 .headshot-container{
     display: flex;
     align-items: center;
-    padding-right: 20px;
+    padding-right: 1rem;
     /* margin-right: 10px; */
 }
 
@@ -211,7 +220,7 @@ svg {
 }
 
 p.subtext{
-    margin: 0 10px;
+    margin: 0 1rem;
     color: #000;
     font-weight: 600;
     word-break: break-word;
@@ -222,7 +231,7 @@ p.subtext{
   .flip3D {
     width: 340px;
     height: 300px;
-    margin: 10px;
+    margin: 1rem;
     float: left;
   }
   
@@ -279,7 +288,7 @@ p.subtext{
 }
 
 .project-image{
-    margin-top: 15px;
+    margin-top: 1.5rem;
     width: 250px;
     border-radius: 25px;
     /* box-shadow: 5px 5px 10px rgb(59, 58, 58); */
@@ -318,8 +327,8 @@ a{
         border: 0;
         background-color: transparent;
         color: white;
-        font-size: 30px;
-        margin: 20px;
+        font-size: 1em;
+        margin: 1rem;
         align-self: flex-end;
     }
 
@@ -352,9 +361,9 @@ a{
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-	padding: 12px 24px 24px 24px;
+	/* padding: 12px 24px 24px 24px;
 	margin: 48px 12px;
-	border-radius: 4px;
+	border-radius: 4px; */
 
 }
 /* Add styles to 'input' and 'textarea' selectors */
