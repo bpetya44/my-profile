@@ -1,3 +1,8 @@
+*, ::before, ::after{
+    transition: all ease-in-out 250ms;
+  
+  }
+
 body{
     font-family: 'Poppins', sans-serif;
     margin: 0;
@@ -6,7 +11,7 @@ body{
 }
 
 section{
-    /* height: 500px; */
+    height: fit-content;
     background: white;
     /* box-shadow:  5px 5px 20px */
 }
@@ -18,6 +23,8 @@ section{
     height: 100vh;
     color: white;
     font-size: 3vw;
+    padding-bottom: 2rem;
+
 }
 
 
@@ -43,7 +50,7 @@ ul{
     list-style-type: none;
     width: 70%;
     justify-content: space-around;
-    font-size: 5vh;
+    /* font-size: 5vh; */
 }
 
 li{
@@ -52,12 +59,13 @@ li{
 }
 
 h1{
-    font-size: 3.2rem;
-    margin: 1rem;
+    font-size: 1.5em;
+    /* margin: 1rem; */
+    margin-top: -2em;
 }
 
 h2{
-    margin-top: 0.8em;
+    /* margin-top: 0.8em; */
     font-size: 3rem;
 }
 
@@ -66,8 +74,12 @@ p{
     font-size: 1.5em;
     font-weight: 300;
 }
+.information{
+    max-width: 50%;
+}
  .information p{
     font-size: 2em;
+    max-width: 70%;
  }
 
 .subtext{
@@ -77,37 +89,69 @@ p{
 
 .hero-area{
     display: flex;
-    height: 100%;
+    height: 100vh;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;    
+}
+/* anmation svg girl */
+.girl{
+    margin-left: 1em;
+    margin-bottom: 18rem;
+    padding-top: 2em;
+    padding-bottom: 2rem;
 }
 
-.iframe{
+#desk{
+    animation: desk 5s infinite linear;
+}
+
+
+@keyframes desk{
+    from{
+        transform: translate(1em, 0);
+    }
+}
+#shelf, #plant{
+    animation: shelf 5s linear infinite;
+}
+
+@keyframes shelf{
+    from{
+        transform: translate(-1em, 0);
+    }
+}
+
+/* .iframe{
     display: flex;
     width: 100vw;
     height: 100vh;
     padding-left: 4rem;
     padding-bottom: 4rem;
-}
+} */
 
 .hero-text{
-    margin-left: -30rem;
+    margin-left: 2rem;
     margin-bottom: 15rem;
+    padding-bottom: 2rem;
 }
 
 @media only screen and (max-width: 600px) {
-    .iframe {
-        display: none;
+    .girl {
+        /* display: none; */
+        width: 100vw;
+        max-width: fit-content;
+        margin-bottom: 2rem;
     }
     .hero-text{
+        font-size: 1rem;
         margin-left: 2rem;
     }
 
 }
 .button{
-    width: 200px;
-    height: 55px;
+    width: 15rem;
+    height: 2em;
     border-radius: 30px;
     background-color: coral;
     text-align: center;
@@ -136,19 +180,19 @@ svg {
 @media only screen and (max-width:600px) {
     .hero-area{
         flex-direction: column;
-        height: 70%;
+        height: 90%;
     }
     .hero{
         max-height: 100vh;
-        font-size: 30px;
+        font-size: 1.5rem;
     }
     .hero-text{
-        margin-bottom: 100px;
+        margin-bottom: 1rem;
     }
     .socials{
         display: flex;
         flex-direction: row;
-        padding-bottom: 5rem;
+        /* padding-bottom: 5rem; */
     }
 }
 
@@ -157,8 +201,8 @@ svg {
 }
 
 .logo{
-    height: 150px;
-    margin: 30px;
+    height: 10rem;
+    margin: 1em;
 }
 
 .subsection{
@@ -217,6 +261,9 @@ svg {
   height: auto;
   /* margin-left: 40px; */
   /* background-color: lightgrey; */
+}
+h3{
+    font-size: 1rem;
 }
 
 p.subtext{
@@ -323,7 +370,9 @@ a{
 
 @media only screen and (max-width: 600px) {
     .hamburger{
-        display: block;
+        /* display: grid;
+        grid-row: auto; */
+        display: flex;
         border: 0;
         background-color: transparent;
         color: white;
@@ -344,14 +393,18 @@ a{
     
     nav{
         display: flex;
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
         background-color: #2d3045;
 
     }
 
     .logo{
-        display: none;
-    
+        /* display: none; */
+    display:grid;
+    height: auto;
+    width: 20%;
+    margin: 0;
+    grid-template-rows: min-content;
     }
 }
 
