@@ -20,10 +20,11 @@ section{
 .hero{
     background: #1c1d25;
     /* background: url("https://my.spline.design/roomrelaxingcopy-fbbef02d499c01366e052534481a9af7/"); */
-    height: 100vh;
+
     color: white;
     font-size: 3vw;
-    padding-bottom: 2rem;
+    /* padding-bottom: 2rem; */
+    
 
 }
 
@@ -61,7 +62,7 @@ li{
 h1{
     font-size: 1.5em;
     /* margin: 1rem; */
-    margin-top: -2em;
+    /* margin-top: -2em; */
 }
 
 h2{
@@ -97,13 +98,13 @@ p{
 /* anmation svg girl */
 .girl{
     margin-left: 1em;
-    margin-bottom: 18rem;
+    /* margin-bottom: 18rem; */
     padding-top: 2em;
     padding-bottom: 2rem;
 }
 
 #desk{
-    animation: desk 5s infinite linear;
+    animation: desk 5s infinite ease-in-out alternate;
 }
 
 
@@ -113,7 +114,7 @@ p{
     }
 }
 #shelf, #plant{
-    animation: shelf 5s linear infinite;
+    animation: shelf 5s infinite ease-in-out alternate;
 }
 
 @keyframes shelf{
@@ -132,8 +133,8 @@ p{
 
 .hero-text{
     margin-left: 2rem;
-    margin-bottom: 15rem;
-    padding-bottom: 2rem;
+    /* margin-bottom: 15rem; */
+    /* padding-bottom: 2rem; */
 }
 
 @media only screen and (max-width: 600px) {
@@ -141,7 +142,7 @@ p{
         /* display: none; */
         width: 100vw;
         max-width: fit-content;
-        margin-bottom: 2rem;
+        /* margin-bottom: 2rem; */
     }
     .hero-text{
         font-size: 1rem;
@@ -174,17 +175,16 @@ svg {
  }
 
 .socials{
-    padding-bottom: 20rem;
+    /* padding-bottom: 20rem; */
 }
 
 @media only screen and (max-width:600px) {
     .hero-area{
         flex-direction: column;
-        height: 90%;
     }
     .hero{
-        max-height: 100vh;
         font-size: 1.5rem;
+        
     }
     .hero-text{
         margin-bottom: 1rem;
@@ -202,7 +202,8 @@ svg {
 
 .logo{
     height: 10rem;
-    margin: 1em;
+    margin-left: 1em;
+    margin-bottom: -10em;
 }
 
 .subsection{
@@ -224,9 +225,6 @@ svg {
     /* margin-left: 40px; */
 }
 
-.inofmation{
-    /* margin-left: 2rem; */
-}
 
 .headshot{
     height: 30vh;
