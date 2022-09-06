@@ -74,13 +74,14 @@ h2 {
 }
 
 p {
-    margin: 1rem;
+    margin: 0.5rem;
     font-size: 1.5em;
     font-weight: 300;
+    word-wrap:break-word;
 }
 
 .information {
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .information p {
@@ -173,7 +174,8 @@ p {
 }
 
 .button:hover {
-    background-color: #ef744b;
+    background-color: #ec5e2f;
+    border: 1px solid #fff;
 }
 
 .button:active {
@@ -243,6 +245,7 @@ svg {
 .headshot {
     height: 30vh;
     border-radius: 50%;
+
 }
 
 .headshot-container {
@@ -494,4 +497,68 @@ form {
         max-width: 100%;
         margin-bottom: 0;
     }
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+@media (max-width: 480px) {
+    .bg-modal {
+        margin-top: 500px;
+    }
+}
+
+.modal-content{
+    width: 90%;
+    height: fit-content;
+    background-color:#1c1d25;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    position: relative;
+    margin-top: 30px;
+}
+
+.modal-content-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.modal-content-information .button{
+    font-size: 0.9rem;  
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.modal-content-information >h2{
+    font-size: 0.9rem;  
+}
+.modal-content-information > img{
+    width: 100px;
+    border-radius: 50%;
+    
+}
+.modal-content-information > p {
+    margin: 0.5em;
+  }
+
+.close{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: transparent;
+    color: white;
+    font-size: 42px;
+   cursor: pointer;
 }
