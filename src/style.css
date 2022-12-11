@@ -306,12 +306,31 @@ p.subtext {
     color: #fff;
     transform: perspective(600px) rotateX(0deg);
     -webkit-transform: perspective(600px) rotateY(0deg);
-    background: url(../img/securyitysystem-bg.com.png);
+  
     border-radius: 10px;
     backface-visibility: hidden;
     transition: transform .6s linear 0s;
     transition: -webkit-transform .6s linear 0s;
     box-shadow: 0 0 30px .5px darkslategrey;
+}
+
+.bg-img-1 {
+    background: url(../img/securyitysystem-bg.com.png);
+    opacity: 0.9;
+}
+.bg-img-2 {
+    background: url(../img/kids-play.png);
+    opacity: 0.9;
+}
+
+.bg-img-3 {
+    background: url(../img/bank-app.png);
+    opacity: 0.9;
+}
+
+.bg-img-4 {
+    background: url(../img/tesla.png);
+    opacity: 0.9;
 }
 
 .flip3D .back {
@@ -350,7 +369,9 @@ p.subtext {
 
 .project-image {
     margin-top: 1.5rem;
-    width: 250px;
+    height: 100%;
+    width: 340px;
+    object-fit: cover;
     border-radius: 25px;
     /* box-shadow: 5px 5px 10px rgb(59, 58, 58); */
 
