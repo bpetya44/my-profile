@@ -9,7 +9,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    font-size: 10px;
+    font-size: 16px;
 }
 
 section {
@@ -22,7 +22,7 @@ section {
 .hero {
     background: #1c1d25;
     /* background: url("https://my.spline.design/roomrelaxingcopy-fbbef02d499c01366e052534481a9af7/"); */
-
+  
     color: white;
     font-size: 3vw;
     /* padding-bottom: 2rem; */
@@ -74,19 +74,24 @@ h2 {
 }
 
 p {
-    margin: 0.5rem;
+   
     font-size: 1.5em;
     font-weight: 300;
     word-wrap:break-word;
 }
 
 .information {
-    max-width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 90%;
+    justify-content: space-around;
 }
 
+
 .information p {
-    font-size: 2em;
-    max-width: 70%;
+    font-size: 2.5em;
+    max-width: 60%;
 }
 
 .subtext {
@@ -146,20 +151,6 @@ p {
     /* padding-bottom: 2rem; */
 }
 
-@media only screen and (max-width: 600px) {
-    .girl {
-        /* display: none; */
-        width: 100vw;
-        max-width: fit-content;
-        /* margin-bottom: 2rem; */
-    }
-
-    .hero-text {
-        font-size: 1rem;
-        margin-left: 2rem;
-    }
-
-}
 
 .button {
     width: 15rem;
@@ -187,31 +178,6 @@ svg {
     filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
-.socials {
-    /* padding-bottom: 20rem; */
-}
-
-@media only screen and (max-width:600px) {
-    .hero-area {
-        flex-direction: column;
-    }
-
-    .hero {
-        font-size: 1.5rem;
-
-    }
-
-    .hero-text {
-        margin-bottom: 1rem;
-    }
-
-    .socials {
-        display: flex;
-        flex-direction: row;
-        /* padding-bottom: 5rem; */
-    }
-}
-
 .social {
     margin: 15px;
 }
@@ -224,8 +190,8 @@ svg {
 
 .subsection {
     display: flex;
-    justify-content: space-around;
-    /* padding: 80px; */
+    align-items: center;
+    flex-direction: column;
     margin-left: 2rem;
     margin-top: 2rem;
 }
@@ -235,7 +201,6 @@ svg {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     text-align: center;
     /* padding: 40px 0; */
     /* margin-left: 40px; */
@@ -255,6 +220,18 @@ svg {
     /* margin-right: 10px; */
 }
 
+.project-container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin: 3rem;
+    /* margin-left: 40px; */
+    /* background-color: lightgrey; */
+}
+
 .project-card {
     width: 350px;
     height: 500px;
@@ -264,16 +241,6 @@ svg {
     border-top-right-radius: 40px;
     border-bottom-left-radius: 40px;
     box-shadow: 5px 5px 10px
-}
-
-.project-container {
-    /* display: flex;
-    justify-content: space-between;
-    justify-items: normal; */
-    width: 90%;
-    height: auto;
-    /* margin-left: 40px; */
-    /* background-color: lightgrey; */
 }
 
 h3 {
@@ -365,12 +332,6 @@ p.subtext {
 
 /* ----------------------- */
 
-@media only screen and (max-width: 600px) {
-    /* .project-container{
-        display: flex;
-        flex-wrap: wrap;
-    } */
-}
 
 .project-image {
     margin-top: 1.5rem;
@@ -410,13 +371,11 @@ a {
 
 @media only screen and (max-width: 600px) {
     .hamburger {
-        /* display: grid;
-        grid-row: auto; */
         display: flex;
         border: 0;
         background-color: transparent;
         color: white;
-        font-size: 1em;
+        font-size: 1.5em;
         margin: 1rem;
         align-self: flex-end;
     }
@@ -429,17 +388,16 @@ a {
 
     ul.show {
         display: block;
+        margin-top: 10px;
     }
 
     nav {
         display: flex;
-        /* flex-direction: column-reverse; */
         background-color: #2d3045;
 
     }
 
     .logo {
-        /* display: none; */
         display: grid;
         height: auto;
         width: 20%;
@@ -455,12 +413,13 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
-	
+	align-items: center;
 
 }
 /* Add styles to 'input' and 'textarea' selectors */
 input[type=text],input[type=email], textarea {
-    max-width: 340px;
+    width: 100%;
+    min-height: 3rem;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -512,21 +471,91 @@ button[type=submit]:hover {
 }
 
 form {
-    max-width: 800px; 
+    max-width: 40%;
+    min-width: 360px;  
     text-align: center;
-    margin: 20px auto;
+    /* margin: auto; */
 }
 
+@media screen and (max-width: 880px){
+    .hero-area{
+        flex-direction: column;
+    }
 
-@media (max-width: 480px) {
-    .center {
-        max-width: 100%;
-        margin-bottom: 0;
+    .socials {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .subsection {
+        flex-direction: column;
+    }
+
+    .information p{
+        font-size: 1.8em;
     }
 }
 
+
+@media screen and (max-width: 720px){
+    .information {
+       flex-direction: column;
+       margin-bottom: 2rem;
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    
+
+    .hero-area {
+        height: fit-content;
+    }
+
+    .girl{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .hero-text {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: row;
+        /* padding-bottom: 5rem; */
+    }
+    .girl {
+        /* display: none; */
+        width: 100vw;
+        max-width: fit-content;
+        /* margin-bottom: 2rem; */
+    }
+
+}
+
+@media (max-width: 480px) {
+    .information p{
+        max-width: 90%;
+        font-size: 1.8em;
+        word-wrap: break-word;
+    }
+    .center {
+        max-width: 90%;
+        margin-bottom: 0;
+    }
+
+     form {
+        width: 90%;
+        margin-left: -1em;
+     }
+}
+
 .bg-modal{
-    width: 100%;
+    
+    width: 90%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     position: fixed;
@@ -535,6 +564,7 @@ form {
     justify-content: center;
     align-items: center;
     display: none;
+   
 }
 
 @media (max-width: 540px) {
@@ -544,6 +574,7 @@ form {
 }
 
 .modal-content{
+    max-width: 1360px;
     width: 90%;
     height: fit-content;
     background-color:#1c1d25;
@@ -552,6 +583,7 @@ form {
     color: white;
     position: relative;
     margin-top: 30px;
+    z-index: 1;
 }
 
 .modal-content-information{
@@ -579,7 +611,7 @@ form {
     margin: 0.5em;
   }
 
-.close{
+.close {
     position: absolute;
     top: 5px;
     right: 10px;
