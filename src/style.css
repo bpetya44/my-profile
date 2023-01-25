@@ -305,6 +305,11 @@ p.subtext {
     opacity: 0.9;
 }
 
+.bg-img-6 {
+    background: url(../img/pizza-box.png);
+    opacity: 0.9;
+}
+
 .flip3D .back {
     display: flex;
     align-items: center;
