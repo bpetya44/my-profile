@@ -491,21 +491,18 @@ form {
         flex-direction: column;
     }
 
+    .information {
+        flex-direction: column;
+        margin-bottom: 2rem;
+     }
+
     .information p{
         font-size: 1.8em;
     }
 }
 
 
-@media screen and (max-width: 720px){
-    .information {
-       flex-direction: column;
-       margin-bottom: 2rem;
-    }
-}
-
-
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:720px) {
     
 
     .hero-area {
